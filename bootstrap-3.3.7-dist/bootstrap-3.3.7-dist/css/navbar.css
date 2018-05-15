@@ -1,0 +1,333 @@
+.firstlist
+{
+	margin-right:20.5px;
+
+}
+
+.centerlist
+{
+	margin-right:20.5px;
+	margin-left:20.5px;
+}
+
+.lastlist
+{
+	margin-left:20.5px;
+}
+
+
+/*Arrow */
+.DirectionalArrow::before {
+    background: currentColor;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 32px;
+	color:#ffffff;
+    left: 19px;
+    position: absolute;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    width: 2px;
+}
+
+.DirectionalArrow::after {
+color:#ffffff;
+    border-bottom: solid 2px currentColor;
+    border-right: solid 2px currentColor;
+    bottom: 3px;
+    content: '';
+    display: block;
+    height: 14px;
+    left: 8px;
+    position: absolute;
+    -webkit-transform: rotate(45deg) translatez(0);
+    transform: rotate(45deg) translatez(0);
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    width: 14px;
+}
+/* Arrow */
+/*Arrown design and anime*/
+.arrow
+{
+margin-top:-60px;
+   -webkit-animation-name: animearrow ; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: animearrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+animation-delay:0s;
+left: 50%;
+opacity:0.8;
+
+    position:absolute;
+	transition:ease-in;
+}
+.arrow:hover
+{
+opacity:1;
+}
+@-webkit-keyframes animearrow {
+    0%   {margin-top:-60px;}
+    50% {margin-top:-56px;}
+    100%{margin-top:-60px; }
+}
+
+
+/*arrow anime end*/
+
+.container-fluid.main{
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
+}
+
+.navbar-default {
+  background-image: none;
+  background-color: transparent; /* Make the menu become transparent */
+  border-radius: 0px;
+  border: 0;
+  box-shadow: none;
+  padding: 10px;
+  position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-default .navbar-brand {
+  font-family: Verdana;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+
+{
+  color: #ffffff;
+  background-color: transparent;
+border-bottom: none;
+   }
+
+
+.navbtndiv::after {
+  background-color: #ffffff ;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+ .current::after
+{
+  width: 100% !important;
+}
+.navbtndivs::after {
+  background-color: #ffffff ;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+.subnav::after{
+	background-color: red !important;
+}
+
+.navbtndiv:hover::after {
+  width: 100%;
+}
+.navbtndivs:hover::after {
+  width: 100%;
+}
+
+.subnav::after
+{
+	background-color: rgba(253, 104, 104, 1) !important;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+
+}
+.subnav:hover :: after{
+	width:100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+	}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+
+
+}
+
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.carousel .background {
+/*  background-position: center center; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width:991px) {
+  .carousel .background {
+    background-size: cover; /* To make the background image looks good */
+  }
+}
+
+.carousel .background.a {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/Theme%20(7).JPG");background-size:cover;
+}
+
+.carousel .background.b {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/IMG_2121.jpg");
+background-size:cover;
+
+}
+
+.carousel .background.c {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/IMG_1992.jpg");
+background-size:cover;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition:ease-in-out
+	 opacity 1s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* CSS Hack to trigger GPU for smooth transition */
+
+.covertext {
+  position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+  top: 200px; /* The distance between the div with the top of document */
+  left: -15px; /* Make the div full width  by wasim*/
+  right: 0px; /* Make the div full width */
+}
+
+.title {
+  font-family: Verdana;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Verdana;
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.explore {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.explore .btn-lg,
+.explore .btn-lg:hover {
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 22px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+}
+
+.btn,
+.btn:hover {
+  border-radius: 0px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  color: #ffffff;
+  outline: none;
+}
